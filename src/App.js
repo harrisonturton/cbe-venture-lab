@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
-import logo from "./logo.svg";
+import EventTile from "./components/event-tile";
+import EventCalendar from "./components/event-calendar";
 import Sidebar from "./components/sidebar";
 import "./App.css";
 
@@ -8,16 +9,13 @@ class App extends Component {
 	render = () => (
 		<Router>
 			<main>
-				<Sidebar/>
-				<h1>Testing</h1>
-				<h1>Testing 2</h1>
+				<Sidebar />
 
-				<div className="content">
+				<div class="page">
 					<Switch>
-						<Route exact path="/"         component={Home}/>
-						<Route path="/event-calendar" component={EventCalendar}/>
-						<Route path="/about-us"       component={AboutUs}/>
-						<Route path="/blog"           component={Blog}/>
+						<Route exact path="/"         component={EventCalendar}/>
+						<Route       path="/about-us" component={AboutUs}/>
+						<Route       path="/blog"     component={Blog}/>
 					</Switch>
 				</div>
 			</main>
@@ -25,9 +23,7 @@ class App extends Component {
 	);
 }
 
-const Home          = () => <h1>Home</h1>
-const EventCalendar = () => <h1>Events Calendar</h1>
-const AboutUs       = () => <h1>About Us</h1>
-const Blog          = () => <h1>Blog</h1>
+const AboutUs = () => <h1>About Us</h1>;
+const Blog    = () => <h1>Blog</h1>;
 
 export default App;
