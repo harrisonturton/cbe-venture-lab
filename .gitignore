@@ -9,6 +9,9 @@
 # production
 /build
 
+# auto-generated stylesheets
+*.css
+
 # misc
 .DS_Store
 .env.local

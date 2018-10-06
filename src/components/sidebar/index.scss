@@ -1,0 +1,22 @@
+
+nav {
+	width: 200px;
+	background-color: grey;
+}
+
+ul {
+
+}
+
+li {
+	display: block;
+}
+
+.nav-item {
+	color: black;
+}
+
+.nav-item.active {
+	color: blue;
+	font-weight: bold;
+}
