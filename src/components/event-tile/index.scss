@@ -3,8 +3,8 @@ $font-sans: SF UI Text, Helvetica Neue, sans-serif;
 $text-dark: #6B6C76;
 $text-light: #9E9FAD;
 
-$drop-shadow: 0px 2px 3px 1px rgba(0,0,0,0.15);
-$drop-shadow-active: 0px 13px 10px 0px rgba(0,0,0,0.15);
+$drop-shadow: 0px 3px 3px 1px rgba(0,0,0,0.15);
+$drop-shadow-active: 0px 10px 13px 0px rgba(0,0,0,0.25);
 $tile-scale: 0.5;
 $border-radius: 0px;
 
@@ -19,7 +19,8 @@ $border-radius: 0px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 
-	padding: 20px;
+	padding: 10px;
+	border: 1px solid #7D7D7D;
 	padding-bottom: 30px;
 	transition: all 125ms linear;
 	transform: TranslateY(0%);
@@ -28,11 +29,8 @@ $border-radius: 0px;
 		transform: TranslateY(-1.5%);
 		box-shadow: $drop-shadow-active;
 	}
-	&:hover img {
-		transform: TranslateY(-2%);
-	}
 	&:hover .overlay {
-		opacity: 1;
+		opacity: 0;
 	}
 	h1, h2, h3, h4 {
 		font-family: $font-sans;
@@ -49,7 +47,7 @@ $border-radius: 0px;
 		min-height: 175px; /* Hacky fix to stop content jumping */
 		border-radius: $border-radius;
 		margin-bottom: 15px;
-		transition: transform 125ms linear;
+		border: 1px solid #7D7D7D;
 	}
 	.overlay {
 		position: absolute;

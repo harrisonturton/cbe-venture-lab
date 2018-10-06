@@ -7,12 +7,6 @@ const nav_items = [
 	{ key: 0, text: "Event Calendar", route: "/calendar" },
 	{ key: 1, text: "About Us",       route: "/about-us" },
 	{ key: 2, text: "Blog",           route: "/blog"     },
-	{ key: 2, text: "Blog",           route: "/blog"     },
-	{ key: 2, text: "Blog",           route: "/blog"     },
-	{ key: 2, text: "Blog",           route: "/blog"     },
-	{ key: 2, text: "Blog",           route: "/blog"     },
-	{ key: 2, text: "Blog",           route: "/blog"     },
-	{ key: 2, text: "Blog",           route: "/blog"     },
 ];
 
 class Sidebar extends Component {
