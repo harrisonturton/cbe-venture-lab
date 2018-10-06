@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
-import EventTile from "./components/event-tile";
-import EventCalendar from "./components/event-calendar";
-import Sidebar from "./components/sidebar";
+import Media from "react-media";
+import Sidebar from "./components/desktop/sidebar";
+import EventCalendar from "./components/desktop/event-calendar";
 import "./App.css";
 
 // https://tylermcginnis.com/react-router-animated-transitions/
