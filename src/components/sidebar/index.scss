@@ -1,6 +1,32 @@
+
 .sidebar {
-	position: fixed;
 	height: 100vh;
 	width: 150px;
-	background: green;
+	padding: 25px;
+	padding-top: 60px;
+
+	img {
+		margin-bottom: 20px;
+	}
+	li {
+		list-style-type: none;
+	}
+	a {
+		display: inline-block;
+		color: rgba(0,0,0,0.5);
+		transition: all 50ms ease-in;
+		padding-top: 6px;
+		padding-bottom: 6px;
+
+		&:hover {
+			color: black;
+			font-weight: 600;
+			transform: TranslateX(3px);
+		}
+		&.nav-elem-active {
+			color: black;
+			font-weight: 600;
+			transform: TranslateX(3px);
+		}
+	}
 }
