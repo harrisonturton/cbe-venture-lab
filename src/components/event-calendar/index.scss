@@ -1,0 +1,22 @@
+
+.event-calendar {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+	.event-calendar {
+		flex-direction: column;
+		width: 100vw;
+		margin: 0;
+		background-color: blue;
+	}
+	.event-tile {
+		width: 100%;
+	}
+}
+
